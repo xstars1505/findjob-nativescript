@@ -1,0 +1,17 @@
+<StackLayout class="form login-wrapper m-t-30" >
+    <StackLayout class="input-field">
+        <Label class="title"  text="Số Điện Thoại"></Label>
+        <TextField class="input input-border-bottom" borderBottomColor="black" borderBottomWidth="1px" [(ngModel)]="phoneNumber"></TextField>
+    </StackLayout>
+    <StackLayout class="input-field">
+        <Label class="title" text="Mật khẩu"></Label>
+        <TextField class="input input-border-bottom" borderBottomColor="black" borderBottomWidth="1px" [(ngModel)]="password"></TextField>
+    </StackLayout>
+    <StackLayout>
+        <Button class="btn btn-primary btn-active btn-rounded-lg"  text="Đăng nhập" (tap)="login()"></Button>
+    </StackLayout>
+    <StackLayout>
+        <a>Quen mat khau</a>
+    </StackLayout>
+
+</StackLayout>

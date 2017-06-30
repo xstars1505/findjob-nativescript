@@ -1,0 +1,14 @@
+*.iml
+.idea/*/
+.idea/*.*
+
+dist/
+css/
+
+platforms/*/
+platforms/*/*.*
+
+tns_modules/*/
+
+node_modules/
+
