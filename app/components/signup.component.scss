@@ -1,0 +1,35 @@
+@import "../common";
+
+StackLayout {
+  margin-left: 15;
+  margin-right: 15;
+  padding-bottom: 15;
+  background-color: white;
+}
+
+.login-wrapper {
+    margin-top: 30;
+    height: 500;
+}
+
+Button {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10;
+}
+
+.text-link {
+  color: $primary;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.inline {
+  display: inline;
+}
+
+GridLayout {
+  .text-link {
+    color: $third;
+  }
+}

@@ -1,0 +1,16 @@
+<StackLayout class="page coverImage">
+    <GridLayout column="1" rows="5*,*" id="slides" class="">
+        <slides #slides [loop]="false" [pageIndicators]="true" (scroll)="next()">
+            <slide #slide   >
+                <Label text="'This is Panel 1"></Label>
+                <Label text="asd"></Label>
+            </slide>
+            <slide>
+                <Label text="'This is Panel 2"></Label>
+                <Label text="asdff"></Label>
+            </slide>
+        </slides>
+        <Button *ngIf="!isLastSlide()" text="Tiep Theo" row="1" (tap)="next()"></Button>
+        <Button *ngIf="isLastSlide()" text="Kham Pha" row="1" (tap)="signin()"></Button>
+    </GridLayout>
+</StackLayout>

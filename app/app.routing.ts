@@ -5,11 +5,14 @@ import { Routes } from "@angular/router";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { LoginComponent } from "./components/login.component";
+import { SignupComponent } from "./components/signup.component";
+import { WelcomeComponent } from "./components/slides.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/login", pathMatch: "full" },
+    { path: "", redirectTo: "/slides", pathMatch: "full" },
     { path: "login", component: LoginComponent },
-    { path: "item/:id", component: ItemDetailComponent },
+    { path: "signup", component: SignupComponent },
+    { path: "slides", component: WelcomeComponent },
 ];
 
 @NgModule({

@@ -10,6 +10,9 @@ import { LoginComponent } from "./components/login.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { SignupComponent } from "./components/signup.component";
+import { WelcomeComponent } from "./components/slides.component";
+import { SlidesModule } from 'nativescript-ngx-slides';
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
@@ -21,11 +24,14 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
     imports: [
         NativeScriptModule,
         NativeScriptFormsModule,
+        SlidesModule,
         AppRoutingModule
     ],
     declarations: [
         AppComponent,
         LoginComponent,
+        SignupComponent,
+        WelcomeComponent,
         ItemsComponent,
         ItemDetailComponent
     ],
