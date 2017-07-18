@@ -6,4 +6,10 @@ $btn-color: $primary;
 
 $link-text: $primary;
 
+.fa {
+  font-family: FontAwesome;
+}
+
+
+
 @import '~nativescript-theme-core/scss/index';

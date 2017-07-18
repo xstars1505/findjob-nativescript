@@ -11,8 +11,9 @@ import { LoginComponent } from "./components/login.component";
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { SignupComponent } from "./components/signup.component";
-import { WelcomeComponent } from "./components/slides.component";
 import { SlidesModule } from 'nativescript-ngx-slides';
+import { WelcomeComponent } from "./components/welcome.component";
+import { TNSFontIconModule } from "nativescript-ngx-fonticon";
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
@@ -25,15 +26,18 @@ import { SlidesModule } from 'nativescript-ngx-slides';
         NativeScriptModule,
         NativeScriptFormsModule,
         SlidesModule,
-        AppRoutingModule
+        AppRoutingModule,
+        TNSFontIconModule.forRoot({
+            'fa': './assets/font-awesome.css'
+        })
     ],
     declarations: [
         AppComponent,
         LoginComponent,
         SignupComponent,
-        WelcomeComponent,
         ItemsComponent,
-        ItemDetailComponent
+        ItemDetailComponent,
+        WelcomeComponent
     ],
     providers: [
         ItemService

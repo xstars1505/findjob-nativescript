@@ -1,0 +1,28 @@
+@import "../common";
+
+.coverImage {
+  background-image: url("res://bg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .slide-bg {
+    background-color: white;
+    text-align: center;
+    border-radius: 6;
+  }
+  .slide-nav-button {
+    color: white;
+
+  }
+
+  .slide-separated-line {
+    color: $primary;
+  }
+  .slide-nav-button-outline {
+
+    border-width: 1;
+    border-color: white;
+    margin: 0 50;
+  }
+}

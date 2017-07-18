@@ -1,0 +1,32 @@
+<StackLayout class="page coverImage">
+    <GridLayout column="1" rows="5*,*" id="slides" class="">
+        <slides #slides [loop]="false" [pageIndicators]="true" (isLast)="checkIsLast($event)">
+            <slide>
+                <StackLayout class="p-l-25 p-r-25 p-t-25">
+                    <StackLayout class=" slide-bg">
+                        <Image  src="~/assets/images/slide-image-1.png" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+                        <Label text="Tim Viec Nhanh" class="h2 " className="font-weight-bold p-t-10"></Label>
+                        <Label text="________" class="h2" className="slide-separated-line font-weight-bold p-t-10"></Label>
+                        <Label text="Giải pháp tốt nhất để bạn có thể tiếp cận các cơ hội việc làm một cách dễ dàng nhất." textWrap="true" class="p-t-30 p-l-30 p-r-30 p-b-20 h4"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </slide>
+            <slide>
+                <StackLayout class="p-l-25 p-r-25 p-t-25">
+                    <StackLayout class=" slide-bg">
+                        <Image  src="~/assets/images/slide-image-2.png" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+                        <Label text="Đã đến lúc" class="h2 " className="font-weight-bold p-t-10"></Label>
+                        <Label text="________" class="h2" className="slide-separated-line font-weight-bold p-t-10"></Label>
+                        <Label text="Khám phá cơ hội phát triển sự nghiệp và tìm được việc làm như ý, theo cách riêng của bạn!" textWrap="true" class="p-t-30 p-l-30 p-r-30 p-b-20 h4"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </slide>
+        </slides>
+        <StackLayout row="1" *ngIf="!isLast">
+            <Button  className="fa slide-nav-button" class="btn" text="{{'Tiep Theo ' + ('fa-arrow-right' | fonticon)}}" (tap)="next()"></Button>
+        </StackLayout>
+        <StackLayout row="1" *ngIf="isLast">
+            <Button className="btn btn-outline btn-rounded-lg slide-nav-button slide-nav-button-outline" text="Kham Pha" (tap)="signin()"></Button>
+        </StackLayout>
+    </GridLayout>
+</StackLayout>
