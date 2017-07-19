@@ -8,6 +8,10 @@ css/
 platforms/*/
 platforms/*/*.*
 
+app/components/*.css
+app/components/*.js
+app/**/*.js
+
 tns_modules/*/
 
 node_modules/
